@@ -53,7 +53,7 @@ export default function Chat() {
           disabled={status !== "awaiting_message"}
           className="w-full max-w-md p-2 mb-8 border border-gray-300 rounded shadow-xl"
           value={input}
-          placeholder="Which dish you want to make?"
+          placeholder="Dish you want to make?"
           onChange={handleInputChange}
         />
       </form>
