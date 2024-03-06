@@ -48,10 +48,10 @@ export default function Chat() {
         <div className="h-8 w-full max-w-md p-2 mb-8 bg-gray-300 dark:bg-gray-600 rounded-lg animate-pulse" />
       )}
 
-      <form onSubmit={submitMessage}>
+      <form onSubmit={submitMessage} className="fixed bottom-0 ">
         <input
           disabled={status !== "awaiting_message"}
-          className="fixed bottom-0 w-full max-w-md p-2 mb-8 border border-gray-300 rounded shadow-xl"
+          className="w-full max-w-md p-2 mb-8 border border-gray-300 rounded shadow-xl"
           value={input}
           placeholder="Which dish you want to make?"
           onChange={handleInputChange}
