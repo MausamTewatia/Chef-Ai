@@ -20,7 +20,7 @@ export default function Chat() {
     useAssistant({ api: "/api/assistant" });
 
   return (
-    <div className="flex flex-col w-full max-w-md py-24 mx-auto stretch">
+    <div className="flex flex-col w-full max-w-md py-24 mx-auto stretch items-center">
       {messages.map((m: Message) => (
         <div
           key={m.id}
